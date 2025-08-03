@@ -1,0 +1,118 @@
+.table-container {
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.user-table thead {
+  background-color: #62005b;
+  color: white;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.user-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.details-btn {
+  background-color: #a10190;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.details-btn:hover {
+  background-color: #7c016e;
+}
+
+.user-details-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.user-card {
+  background-color: #f4f4f4;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 500px;
+  width: 100%;
+  text-align: left;
+}
+
+.user-card h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.user-card p {
+  margin: 8px 0;
+  color: #555;
+}
+
+.btn-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.back-btn,
+.todo-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.back-btn {
+  background-color: #ccc;
+  color: #333;
+}
+
+.todo-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.back-btn:hover {
+  background-color: #bbb;
+}
+
+.todo-btn:hover {
+  background-color: #0056b3;
+}
+
+
+.loader {
+  border: 6px solid #f3f3f3;       
+  border-top: 6px solid #3498db;   
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: auto; 
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
